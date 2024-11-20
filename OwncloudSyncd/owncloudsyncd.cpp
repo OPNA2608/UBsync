@@ -13,6 +13,14 @@
 
 #include "owncloudsyncd.h"
 
+#ifdef CLICK_BIN_PATH
+#define NEXTCLOUDCMD (CLICK_BIN_PATH "/nextcloudcmd")
+#define OWNCLOUDCMD  (CLICK_BIN_PATH "/owncloudcmd")
+#else
+#define NEXTCLOUDCMD "nextcloudcmd"
+#define OWNCLOUDCMD  "owncloudcmd"
+#endif
+
 OwncloudSyncd::OwncloudSyncd()
 {
     QCoreApplication::setApplicationName("owncloud-sync");
@@ -63,26 +71,21 @@ void OwncloudSyncd::emitSignal(QString msgTxt){
  * @return version string
  */
 QString OwncloudSyncd::getVersionNumber(){
-
-    QString owncloudcmd = getOwncloudCmd();
-
-    QStringList arguments;
-    arguments << "--version";
-
-    QProcess *owncloudcmdVersion = new QProcess();
-    owncloudcmdVersion->start(owncloudcmd, arguments);
-    //Wait for the sync to complete. Dont time out.
-    owncloudcmdVersion->waitForFinished(-1);
-
-    QString output(owncloudcmdVersion->readAllStandardOutput());
-
-    if (output.contains("version")) {
-        output.resize (26);
-        output = output.simplified();
-    } else {
+    const QStringList cmds { OWNCLOUDCMD, NEXTCLOUDCMD };
+    QStringList arguments { "--version" };
+    QString output;
+    for (const auto& cmd : cmds) {
+        QProcess *proc = new QProcess();
+        proc->start(cmd, arguments);
+        //Wait for the sync to complete. Dont time out.
+        proc->waitForFinished(-1);
+        QTextStream s(proc->readAllStandardOutput());
+        QString line = s.readLine();
+        output += output.isEmpty() ? line : ", " + line;
+    }
+    if (output.isEmpty()) {
         output = tr("unspecified");
     }
-
     return output;
 }
 
@@ -161,20 +164,6 @@ QStringList OwncloudSyncd::getLastSync(){
     list << "lastSync" << QString::number(m_lastSync);
 
     return list;
-}
-
-
-/**
- * @brief GET owncloudcmd path
- * @return owncloudcmd PATH
- */
-QString OwncloudSyncd::getOwncloudCmd(){
-    QString owncloudcmd =
-#ifdef CLICK_BIN_PATH
-        CLICK_BIN_PATH "/"
-#endif
-        "owncloudcmd";
-    return owncloudcmd;
 }
 
 
@@ -366,6 +355,8 @@ void OwncloudSyncd::getCredentials()
 
             m_processedAccountId = i.key();
 
+            m_accountProvider.insert(m_processedAccountId, service.provider());
+
             authSession->request(sessionData, ad.method());
 
             /* Wait until requested credentials found */
@@ -426,16 +417,35 @@ void OwncloudSyncd::syncDir(const int targetID){
     }
 
     QString localPath = m_targetLocal[targetID];
-    QString remotePath = m_accountAddr[m_targetAccount.value(targetID)] + QStringLiteral("/remote.php/webdav") + m_targetRemote[targetID];
-    qDebug() << "Starting Owncloud Sync from " << localPath << " to " << remotePath;
-
-    QString owncloudcmd = getOwncloudCmd();
+    QString remotePath = m_targetRemote[targetID];
+    QString serverUrl = m_accountAddr[m_targetAccount.value(targetID)];
+    QString syncCmd = "false";
     QStringList arguments;
-    if (m_accountSyncHidden[m_targetAccount.value(targetID)] == true) {
-       arguments << "--user" << m_accountUser[m_targetAccount.value(targetID)] << "--password" << m_accountPass[m_targetAccount.value(targetID)] << "--silent" << "--non-interactive" << "-h" << localPath << remotePath;
-       qDebug() << "Hidden files synchronisation set";
-    } else{
-       arguments << "--user" << m_accountUser[m_targetAccount.value(targetID)] << "--password" << m_accountPass[m_targetAccount.value(targetID)] << "--silent" << "--non-interactive" << localPath << remotePath;
+
+    if (m_accountProvider[m_targetAccount.value(targetID)] == "nextcloud") {
+        syncCmd = NEXTCLOUDCMD;
+        arguments << "--non-interactive"
+            << "--user" << m_accountUser[m_targetAccount.value(targetID)]
+            << "--password" << m_accountPass[m_targetAccount.value(targetID)]
+            << "--path" << remotePath;
+        if (m_accountSyncHidden[m_targetAccount.value(targetID)]) {
+            arguments << "-h";
+            qDebug() << "Hidden files synchronisation set";
+        }
+        arguments << localPath
+            << serverUrl;
+    } else if (m_accountProvider[m_targetAccount.value(targetID)] == "owncloud") {
+        syncCmd = OWNCLOUDCMD;
+        arguments << "--non-interactive"
+            << "--user" << m_accountUser[m_targetAccount.value(targetID)]
+            << "--password" << m_accountPass[m_targetAccount.value(targetID)];
+        if (m_accountSyncHidden[m_targetAccount.value(targetID)]) {
+            arguments << "-h";
+            qDebug() << "Hidden files synchronisation set";
+        }
+        arguments << localPath
+            << serverUrl
+            << remotePath;
     }
 
     /* The following debug msg contains username/password ! */
@@ -445,7 +455,7 @@ void OwncloudSyncd::syncDir(const int targetID){
     QProcess *owncloudsync = new QProcess();
     //Retrieve all debug from process
     owncloudsync->setProcessChannelMode(QProcess::ForwardedChannels);
-    owncloudsync->start(owncloudcmd, arguments);
+    owncloudsync->start(syncCmd, arguments);
     //Wait for the sync to complete. Dont time out.
     owncloudsync->waitForFinished(-1);
     

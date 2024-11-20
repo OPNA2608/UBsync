@@ -55,7 +55,6 @@ private slots:
     void getDatabase();
     void getCredentials();
 
-    QString getOwncloudCmd();
     void emitSignal(QString);
     QString getVersionNumber();
 
@@ -86,6 +85,8 @@ private:
     QMap<int, bool> m_accountUseMobileData;
     /* accountID - syncFreq */
     QMap<int, int> m_accountSyncFreq;
+    /* accountID - provider */
+    QMap<int, QString> m_accountProvider;
 
     /* Account beeing currently processed */
     int m_processedAccountId;
