@@ -135,7 +135,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
                     labeltext: i18n.tr("Owncloud client:")
                     linktext: "Owncloudcmd"
-                    linkurl: "https://doc.owncloud.org/desktop/2.3/owncloudcmd.1.html"
+                    linkurl: "https://doc.owncloud.com/desktop/latest/advanced_usage/command_line_client.html"
                 }
                 LabelLinkRow {
                     id: nextCloudClientLabel
@@ -143,7 +143,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
                     labeltext: i18n.tr("Nextcloud client:")
                     linktext: "Nextcloudcmd"
-                    linkurl: "https://docs.nextcloud.com/desktop/2.3/advancedusage.html"
+                    linkurl: "https://docs.nextcloud.com/desktop/latest/advancedusage.html#nextcloud-command-line-client"
                 }
                 LabelLinkRow {
                     id: qtLabel
@@ -151,7 +151,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
                     labeltext: i18n.tr("This Qt library for WebDAV:")
                     linktext: "qwebdavlib"
-                    linkurl: "https://github.com/mhaller/qwebdavlib"
+                    linkurl: "https://github.com/fredldotme/qwebdavlib"
                 }
                 LabelLinkRow {
                     id: iconLabel
@@ -159,7 +159,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
                     labeltext: i18n.tr("Joan CiberSheep for the logo from:")
                     linktext: "Suru Theme"
-                    linkurl: "https://github.com/snwh/suru-icon-theme"
+                    linkurl: "https://gitlab.com/ubports/development/core/suru-icon-theme"
                 }
                 LabelLinkRow {
                     id: clickableLabel
