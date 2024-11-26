@@ -244,7 +244,6 @@ Page {
                 /* re-render anytime page is shown */
                 console.log("EditTarget :: editTargetPage activated")
                 targetPage.loadDB()
-                targetPage.updateDB() // initial saving of the new target
             }
         }
 
@@ -256,7 +255,13 @@ Page {
 
         trailingActionBar{
             actions: [
-
+                Action {
+                    iconName: "tick"
+                    onTriggered: {
+                        targetPage.updateDB();
+                        apl.removePages(targetPage);
+                    }
+                }
             ]
         }
     }
