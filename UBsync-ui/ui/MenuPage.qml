@@ -14,7 +14,7 @@ Page {
 
     header: PageHeader {
         id: header
-        title: i18n.tr("UBsync")
+        title: i18n.tr("Lomiri Cloudsync App")
         flickable: flickable
 
         trailingActionBar{

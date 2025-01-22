@@ -43,7 +43,7 @@ MainView {
     objectName: "mainView"
 
     // Note! applicationName needs to match the "name" field of the click manifest
-    applicationName: "ubsync"
+    applicationName: "lomiri-cloudsync-app"
     applicationVersion: "0.8"
     applicationPatch: "1" // minor version
 

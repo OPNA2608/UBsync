@@ -1,8 +1,8 @@
 {
-    "name": "ubsync",
+    "name": "lomiri-cloudsync-app",
     "description": "A tool to synchronise files between Ubuntu Touch and your ownCloud/nextCloud server",
     "architecture": "@CLICK_ARCH@",
-    "title": "UBsync",
+    "title": "Cloudsync",
     "hooks": {
         "UBsync": {
             "accounts": "UBsync-ui/UBsync.accounts",

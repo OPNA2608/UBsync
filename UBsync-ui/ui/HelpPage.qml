@@ -43,9 +43,9 @@ Page {
             id: introDescription
             text: "<p>" +
                   i18n.tr("To set-up syncing for your folders:") + "</p><br><p>" +
-                  i18n.tr("1) go to UBsync \"Online Accounts\", add new account by clicking \"plus\" icon in the main menu") + "</p><br><p>" +
+                  i18n.tr("1) go to Lomiri Cloudsync App \"Online Accounts\", add new account by clicking \"plus\" icon in the main menu") + "</p><br><p>" +
                   i18n.tr("2) set-up new \"target\" by clicking the \"new target\" icon in the account detail page main menu, or in the accounts list accounts' trailer menu") + "</p><br><p>" +
-                  i18n.tr("3) start the syncing service from the \"UBsync Settings\"") +
+                  i18n.tr("3) start the syncing service from the \"Lomiri Cloudsync App Settings\"") +
                   "</p>"
             anchors.leftMargin: units.gu(2)
             font.pixelSize: units.gu(2)
@@ -66,11 +66,11 @@ Page {
         Label {
             id: accountDescription
             text: "<p>" +
-                  i18n.tr("The term \"account\" represents in the UBsync context the system online account, as configured in system settings plus the custom UBsync configuration maintained by UBsync.") + "</p><br><p>" +
-                  i18n.tr("The account might be enabled or disabled independently on UBsync. If an account cannot be used by UBsync anymore, its configuration persists in UBsync, however, the related targets will not synchronize.") + "</p><br><p>" +
-                  i18n.tr("If you remove the account configuration from UBsync, the related targets will NOT synchronize until you re-create the account settings. If you wish to temporarily pause all targets related to the particular account, you can disable this account in system settings temporarily without affecting UBsync configuration.") +
+                  i18n.tr("The term \"account\" represents in the Lomiri Cloudsync App context the system online account, as configured in system settings plus the custom Lomiri Cloudsync App configuration maintained by Lomiri Cloudsync App.") + "</p><br><p>" +
+                  i18n.tr("The account might be enabled or disabled independently on Lomiri Cloudsync App. If an account cannot be used by Lomiri Cloudsync App anymore, its configuration persists in Lomiri Cloudsync App, however, the related targets will not synchronize.") + "</p><br><p>" +
+                  i18n.tr("If you remove the account configuration from Lomiri Cloudsync App, the related targets will NOT synchronize until you re-create the account settings. If you wish to temporarily pause all targets related to the particular account, you can disable this account in system settings temporarily without affecting Lomiri Cloudsync App configuration.") +
                   "</p><br><p>" +
-                  i18n.tr("UBsync uses following account symbols to express account states:") +
+                  i18n.tr("Lomiri Cloudsync App uses following account symbols to express account states:") +
                   "</p>"
             anchors.leftMargin: units.gu(2)
             font.pixelSize: units.gu(2)
@@ -207,8 +207,8 @@ Page {
 
         Label {
             id: targetDescription
-            text: "<p>" + i18n.tr("The term \"target\" represents in the UBsync context the remote/local directory pair intended for synchronization plus  the set of custom \"target\" configuration.") + "</p><br>" +
-                  "<p>" + i18n.tr("UBsync uses following target symbols to express target states:") + "</p>"
+            text: "<p>" + i18n.tr("The term \"target\" represents in the Lomiri Cloudsync App context the remote/local directory pair intended for synchronization plus  the set of custom \"target\" configuration.") + "</p><br>" +
+                  "<p>" + i18n.tr("Lomiri Cloudsync App uses following target symbols to express target states:") + "</p>"
             font.pixelSize: units.gu(2)
             width: parent.width - parent.anchors.leftMargin - parent.anchors.rightMargin
             wrapMode: Text.WordWrap

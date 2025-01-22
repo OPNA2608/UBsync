@@ -64,7 +64,7 @@ Page {
                 textSize: Label.XLarge
                 font.weight: Font.DemiBold
                 horizontalAlignment: Text.AlignHCenter
-                text: "UBsync"
+                text: "Lomiri Cloudsync App"
             }
 
             Column {

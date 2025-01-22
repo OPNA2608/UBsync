@@ -4,5 +4,5 @@
   <provider>owncloud</provider>
   <name>Owncloud</name>
   <profile>ubsync_UBsync</profile>
-  <translations>UBsync</translations>
+  <translations>lomiri-cloudsync-app</translations>
 </service>

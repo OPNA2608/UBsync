@@ -2,7 +2,7 @@
 <application id="ubsync_UBsync">
   <description>Cloud Synchronization</description>
   <desktop-entry>UBsync.desktop</desktop-entry>
-  <translations>UBsync</translations>
+  <translations>lomiri-cloudsync-app</translations>
   <profile>ubsync_UBsync</profile>
   <services>
     <service id="ubsync_UBsync_nextcloud">

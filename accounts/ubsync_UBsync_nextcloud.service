@@ -4,5 +4,5 @@
   <provider>nextcloud</provider>
   <name>Nextcloud</name>
   <profile>ubsync_UBsync</profile>
-  <translations>UBsync</translations>
+  <translations>lomiri-cloudsync-app</translations>
 </service>

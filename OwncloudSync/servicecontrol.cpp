@@ -59,7 +59,7 @@ bool ServiceControl::installServiceFile()
     }
 
     f.write("[Unit]\n");
-    f.write("Description=UBsync Owncloud/Nextcloud client\n");
+    f.write("Description=Lomiri Cloudsync App Owncloud/Nextcloud client\n");
     f.write("After=network.target\n");
     f.write("\n");
     f.write("[Service]\n");
