@@ -47,7 +47,7 @@ Page {
                 height: width
                 anchors.horizontalCenter: parent.horizontalCenter
                 source: Image {
-                   source: "../UBsync.png"
+                   source: "../UBsync.svg"
                 }
 
                 MouseArea{

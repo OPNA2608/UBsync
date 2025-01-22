@@ -5,16 +5,23 @@ TEMPLATE = subdirs
 
 CONFIG += -std=gnu++11
 
-#load Ubuntu specific features
-load(ubuntu-click)
+SUBDIRS += \
+    UBsync-ui \
+    OwncloudSync \
+    OwncloudSyncd
 
-SUBDIRS += qwebdavlib \
-           UBsync-ui \
-           OwncloudSync \
-           OwncloudSyncd
+click {
+    #load Ubuntu specific features
+    load(ubuntu-click)
 
-# what subproject depends on others
-OwncloudSync.depends = qwebdavlib
+    SUBDIRS += qwebdavlib
+
+    # what subproject depends on others
+    OwncloudSync.depends = qwebdavlib
+} else {
+    SUBDIRS += accounts
+}
+
 # specify the manifest file, this file is required for click
 # packaging and for the IDE to create runconfigurations
 UBUNTU_MANIFEST_FILE=manifest.json.in
@@ -30,11 +37,13 @@ UBUNTU_TRANSLATION_DOMAIN="ubsync"
 UBUNTU_TRANSLATION_SOURCES+= \
     $$files(*.qml,true) \
     $$files(*.js,true) \
-    $$files(*.desktop,true)
+    $$files(*.desktop.in,true)
 
 # specifies all translations files and makes sure they are
 # compiled and installed into the right place in the click package
 UBUNTU_PO_FILES+=$$files(po/*.po)
+
+include(ubuntu-translations-compat.pri)
 
 aptest.target   = autopilot
 aptest.commands = bash $$PWD/UBsync-ui/tests/autopilot/run
@@ -45,7 +54,3 @@ unittest.commands = /usr/bin/qmltestrunner -input $$PWD/UBsync-ui/tests/unit
 unittest.depends  = sub-Owncloud-Sync
 
 QMAKE_EXTRA_TARGETS += aptest unittest
-
-DISTFILES += \
-
-

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="ubsync_UBsync">
+  <description>Cloud Synchronization</description>
+  <desktop-entry>UBsync.desktop</desktop-entry>
+  <translations>UBsync</translations>
+  <profile>ubsync_UBsync</profile>
+  <services>
+    <service id="ubsync_UBsync_nextcloud">
+      <description>NextCloud Synchronization</description>
+    </service>
+    <service id="ubsync_UBsync_owncloud">
+      <description>OwnCloud Synchronization</description>
+    </service>
+  </services>
+</application>

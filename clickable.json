@@ -1,6 +1,7 @@
 {
     "framework": "ubuntu-sdk-20.04",
     "builder": "qmake",
+    "build_args": "CONFIG+=click",
     "dependencies_target": [
        "libaccounts-qt5-dev",
        "libsignon-qt5-dev"

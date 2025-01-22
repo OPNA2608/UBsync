@@ -65,12 +65,11 @@ bool ServiceControl::installServiceFile()
     f.write("[Service]\n");
     f.write("Type=simple\n");
     f.write("WorkingDirectory=%h/.config/ubsync\n");
-#if INTPTR_MAX == INT64_MAX
-    f.write("Environment=\"LD_LIBRARY_PATH=/opt/click.ubuntu.com/ubsync/current/lib/aarch64-linux-gnu/\"\n");
-    f.write("ExecStart=/opt/click.ubuntu.com/ubsync/current/lib/aarch64-linux-gnu/bin/" + m_serviceName.toUtf8() + "\n");
+#if defined(CLICK_LIB_PATH) && defined(CLICK_BIN_PATH)
+    f.write("Environment=\"LD_LIBRARY_PATH=" CLICK_LIB_PATH "\"\n");
+    f.write("ExecStart=" CLICK_BIN_PATH "" + m_serviceName.toUtf8() + "\n");
 #else
-    f.write("Environment=\"LD_LIBRARY_PATH=/opt/click.ubuntu.com/ubsync/current/lib/arm-linux-gnueabihf/\"\n");
-    f.write("ExecStart=/opt/click.ubuntu.com/ubsync/current/lib/arm-linux-gnueabihf/bin/" + m_serviceName.toUtf8() + "\n");
+    f.write("ExecStart=/usr/bin/" + m_serviceName.toUtf8() + "\n");
 #endif
     f.write("\n");
     f.write("[Install]\n");

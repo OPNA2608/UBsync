@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service id="ubsync_UBsync_nextcloud">
+  <type>ubsync_UBsync</type>
+  <provider>nextcloud</provider>
+  <name>Nextcloud</name>
+  <profile>ubsync_UBsync</profile>
+  <translations>UBsync</translations>
+</service>

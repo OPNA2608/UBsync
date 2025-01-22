@@ -3,7 +3,9 @@ TARGET = OwncloudSync
 QT += qml quick dbus xml network
 CONFIG += qt plugin c++11
 
-load(ubuntu-click)
+include($$PWD/../common-install.pri)
+
+click:load(ubuntu-click)
 
 TARGET = $$qtLibraryTarget($$TARGET)
 
@@ -33,13 +35,21 @@ OTHER_FILES = qmldir
 }
 
 qmldir.files = qmldir
-installPath = $${UBUNTU_CLICK_PLUGIN_PATH}/OwncloudSync
+
+click {
+    INCLUDEPATH += $$PWD/../qwebdavlib
+    DEPENDPATH += $$PWD/../qwebdavlib
+
+    LIBS += -L$$OUT_PWD/../qwebdavlib/ -lqwebdav
+
+    installPath = $${UBUNTU_CLICK_PLUGIN_PATH}/OwncloudSync
+} else {
+    CONFIG += link_pkgconfig
+    PKGCONFIG += qwebdav-qt5
+
+    installPath = $${INSTALL_QML}/OwncloudSync
+}
+
 qmldir.path = $$installPath
 target.path = $$installPath
 INSTALLS += target qmldir
-
-INCLUDEPATH += $$PWD/../qwebdavlib
-DEPENDPATH += $$PWD/../qwebdavlib
-
-#LIBS += -L$$OUT_PWD/../qwebdavlib/ -lqwebdav
-LIBS += -L$$OUT_PWD/../qwebdavlib/ -lqwebdav

@@ -169,26 +169,12 @@ QStringList OwncloudSyncd::getLastSync(){
  * @return owncloudcmd PATH
  */
 QString OwncloudSyncd::getOwncloudCmd(){
-
-    QString owncloudcmd;
-
-#if INTPTR_MAX == INT64_MAX
-    qDebug() << "Arm64";
-    if( QFile("/opt/click.ubuntu.com/ubsync/current/lib/aarch64-linux-gnu/bin/owncloudcmd").exists()){
-        owncloudcmd = "/opt/click.ubuntu.com/ubsync/current/lib/aarch64-linux-gnu/bin/owncloudcmd";
-#else
-    qDebug() << "Arm32";
-    if( QFile("/opt/click.ubuntu.com/ubsync/current/lib/arm-linux-gnueabihf/bin/owncloudcmd").exists()){
-        owncloudcmd = "/opt/click.ubuntu.com/ubsync/current/lib/arm-linux-gnueabihf/bin/owncloudcmd";
+    QString owncloudcmd =
+#ifdef CLICK_BIN_PATH
+        CLICK_BIN_PATH "/"
 #endif
-        qDebug() << "Using Arm owncloudcmd Binary - Mobile";
-    } else{
-        owncloudcmd = "owncloudcmd";
-        qDebug() << "Using System owncloudcmd Binary - Desktop";
-    }
-
+        "owncloudcmd";
     return owncloudcmd;
-
 }
 
 
