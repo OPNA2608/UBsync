@@ -1,0 +1,9 @@
+clickable_minimum_required: "8.0.0"
+builder: "qmake"
+
+dependencies_target:
+- "libaccounts-qt5-dev"
+- "libsignon-qt5-dev"
+
+build_args:
+- "CONFIG+=click"
