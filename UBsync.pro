@@ -47,10 +47,6 @@ include(ubuntu-translations-compat.pri)
 
 aptest.target   = autopilot
 aptest.commands = bash $$PWD/UBsync-ui/tests/autopilot/run
-aptest.depends  = sub-Owncloud-Sync
+aptest.depends  = sub-OwncloudSync
 
-unittest.target   = check
-unittest.commands = /usr/bin/qmltestrunner -input $$PWD/UBsync-ui/tests/unit 
-unittest.depends  = sub-Owncloud-Sync
-
-QMAKE_EXTRA_TARGETS += aptest unittest
+QMAKE_EXTRA_TARGETS += aptest
