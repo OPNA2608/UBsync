@@ -1,0 +1,72 @@
+/*
+  Copyright (C) 2025 UBports Foundation.
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License 3 as published by
+  the Free Software Foundation.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program. If not, see http://www.gnu.org/licenses/.
+*/
+
+#pragma once
+
+#include <QDir>
+#include <QString>
+
+static const QString APP_DIR = qgetenv ("APP_DIR");
+
+static const QString OWNCLOUD_VENDOR_LIBDIR = QStringLiteral ("@CLICK_LIB_PATH@");
+static const QString OWNCLOUD_VENDOR_BINDIR = QStringLiteral ("@CLICK_BIN_PATH@");
+
+inline bool isClick (void)
+{
+    static bool appDirSet = !APP_DIR.isEmpty();
+    return appDirSet;
+}
+
+inline QString vendoredOwncloudLibdir (void)
+{
+    static QString dir = QString();
+
+    if (dir.isEmpty())
+    {
+        if (!APP_DIR.isEmpty())
+        {
+            dir = QDir::cleanPath (APP_DIR + QStringLiteral ("/") + OWNCLOUD_VENDOR_LIBDIR);
+        }
+    }
+
+    return dir;
+}
+
+inline QString vendoredOwncloudBindir (void)
+{
+    static QString dir = QString();
+
+    if (dir.isEmpty())
+    {
+        if (!APP_DIR.isEmpty())
+        {
+            dir = QDir::cleanPath (APP_DIR + QStringLiteral ("/") + OWNCLOUD_VENDOR_BINDIR);
+        }
+    }
+
+    return dir;
+}
+
+inline QString cloudCmd (QString cmd)
+{
+    if (!APP_DIR.isEmpty())
+    {
+        return QDir::cleanPath (vendoredOwncloudBindir() + QStringLiteral ("/") + cmd);
+    }
+    else
+    {
+        return cmd;
+    }
+}

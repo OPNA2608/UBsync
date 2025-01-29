@@ -13,13 +13,10 @@
 
 #include "owncloudsyncd.h"
 
-#ifdef CLICK_BIN_PATH
-#define NEXTCLOUDCMD (CLICK_BIN_PATH "/nextcloudcmd")
-#define OWNCLOUDCMD  (CLICK_BIN_PATH "/owncloudcmd")
-#else
-#define NEXTCLOUDCMD "nextcloudcmd"
-#define OWNCLOUDCMD  "owncloudcmd"
-#endif
+#include "config.hpp"
+
+static const QString NEXTCLOUDCMD = cloudCmd ("nextcloudcmd");
+static const QString OWNCLOUDCMD = cloudCmd ("owncloudcmd");
 
 OwncloudSyncd::OwncloudSyncd()
 {

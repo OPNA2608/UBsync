@@ -1,5 +1,7 @@
 #include "servicecontrol.h"
 
+#include "config.hpp"
+
 #include <QFile>
 #include <QDir>
 #include <QDebug>
@@ -65,12 +67,15 @@ bool ServiceControl::installServiceFile()
     f.write("[Service]\n");
     f.write("Type=simple\n");
     f.write("WorkingDirectory=%h/.config/ubsync\n");
-#if defined(CLICK_LIB_PATH) && defined(CLICK_BIN_PATH)
-    f.write("Environment=\"LD_LIBRARY_PATH=" CLICK_LIB_PATH "\"\n");
-    f.write("ExecStart=" CLICK_BIN_PATH "" + m_serviceName.toUtf8() + "\n");
-#else
-    f.write("ExecStart=/usr/bin/" + m_serviceName.toUtf8() + "\n");
-#endif
+    if (isClick()) {
+        QString environmentArg (QStringLiteral ("Environment=\"LD_LIBRARY_PATH=") + vendoredOwncloudLibdir() + QStringLiteral ("\"\n"));
+        f.write(environmentArg.toUtf8());
+
+        QString startArg (QStringLiteral ("ExecStart=") + vendoredOwncloudBindir() + QStringLiteral ("/") + m_serviceName + QStringLiteral ("\n"));
+        f.write(startArg.toUtf8());
+    } else {
+        f.write("ExecStart=/usr/bin/" + m_serviceName.toUtf8() + "\n");
+    }
     f.write("\n");
     f.write("[Install]\n");
     f.write("WantedBy=default.target\n");
