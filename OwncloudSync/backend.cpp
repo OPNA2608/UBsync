@@ -9,11 +9,11 @@
 
 void BackendPlugin::registerTypes(const char *uri)
 {
-    Q_ASSERT(uri == QLatin1String("OwncloudSync"));
+    Q_ASSERT(uri == QLatin1String("CloudsyncOwncloud"));
 
     qmlRegisterType<ServiceControl>(uri, 1, 0, "ServiceController");
     qmlRegisterType<DaemonController>(uri, 1, 0, "DaemonController");
-    qmlRegisterType<OwncloudSync>(uri, 1, 0, "OwncloudSync");
+    qmlRegisterType<OwncloudSync>(uri, 1, 0, "CloudsyncOwncloud");
     qmlRegisterType<webdavfolderlistmodel>(uri, 1, 0, "WebdavFolderListModel");
 }
 

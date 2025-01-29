@@ -16,7 +16,7 @@ DaemonController::DaemonController(QObject *parent) : QObject(parent)
     m_iface = new QDBusInterface(OWNCLOUDSYNCD_SERVICE, OWNCLOUDSYNCD_CONTROLLER_PATH, OWNCLOUDSYNCD_CONTROLLER_INTERFACE, QDBusConnection::sessionBus());
     if (m_iface->isValid()) {
 
-        qDebug() << "[DaemonController::DaemonController] - Connected to owncloudsyncd dbus interface";
+        qDebug() << "[DaemonController::DaemonController] - Connected to lomiri-cloudsync-owncloudd dbus interface";
     }
 
     //Example connection to dbus daemon

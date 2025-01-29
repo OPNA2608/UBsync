@@ -23,7 +23,7 @@ import "ui"
 import "components"
 
 // C++ Plugin
-import OwncloudSync 1.0
+import CloudsyncOwncloud 1.0
 
 
 import Qt.labs.settings 1.0
@@ -102,7 +102,7 @@ MainView {
                 )
     }
 
-    OwncloudSync{
+    CloudsyncOwncloud{
         id: owncloudsync
         Component.onCompleted: console.log(owncloudsync.logPath())
     }
@@ -114,7 +114,7 @@ MainView {
 
     ServiceController {
         id: serviceController
-        serviceName: "OwncloudSyncd"
+        serviceName: "lomiri-cloudsync-owncloudd"
         Component.onCompleted: {
 
             //Create the upstart files

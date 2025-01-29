@@ -4,7 +4,7 @@ import Lomiri.Components 1.3
 import "../components"
 
 // C++ Plugin
-import OwncloudSync 1.0
+import CloudsyncOwncloud 1.0
 
 FileBrowser{
     id:fileBrowser

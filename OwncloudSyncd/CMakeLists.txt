@@ -1,4 +1,4 @@
-set (TARGET OwncloudSyncd)
+set (TARGET lomiri-cloudsync-owncloudd)
 
 list (APPEND ${TARGET}_SRCS
     main.cpp

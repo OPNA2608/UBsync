@@ -1,4 +1,4 @@
-set (TARGET OwncloudSync)
+set (TARGET CloudsyncOwncloud)
 
 list (APPEND ${TARGET}_SRCS
     backend.cpp
@@ -23,9 +23,9 @@ target_link_libraries (${TARGET} PUBLIC
 )
 
 install (TARGETS ${TARGET}
-    LIBRARY DESTINATION ${QT_IMPORTS_DIR}/OwncloudSync
+    LIBRARY DESTINATION ${QT_IMPORTS_DIR}/${TARGET}
 )
 
 install (FILES qmldir
-    DESTINATION ${QT_IMPORTS_DIR}/OwncloudSync
+    DESTINATION ${QT_IMPORTS_DIR}/${TARGET}
 )

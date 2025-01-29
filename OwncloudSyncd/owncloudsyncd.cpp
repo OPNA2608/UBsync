@@ -24,7 +24,7 @@ OwncloudSyncd::OwncloudSyncd()
     QDBusConnection::sessionBus().registerService(OWNCLOUDSYNCD_SERVICE);
     QDBusConnection::sessionBus().registerObject(OWNCLOUDSYNCD_CONTROLLER_PATH, this, QDBusConnection::ExportScriptableSlots|QDBusConnection::ExportScriptableSignals);
 
-    qDebug() << "[owncloudsyncd](OwncloudSyncd::OwncloudSyncd()) - Registering with dbus";
+    qDebug() << "[lomiri-cloudsync-owncloudd](OwncloudSyncd::OwncloudSyncd()) - Registering with dbus";
 
 
     m_settingsFile =  QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/ubsync/ubsync.conf";
@@ -91,7 +91,7 @@ QString OwncloudSyncd::getVersionNumber(){
  * @todo force sync now - do not take lastSync into account and sync only selected targets?
  */
 QStringList OwncloudSyncd::forceSync(){
-    qDebug() << "[owncloudsyncd](OwncloudSyncd::forceSync()) - force a sync event";
+    qDebug() << "[lomiri-cloudsync-owncloudd](OwncloudSyncd::forceSync()) - force a sync event";
 
     // TODO - change ???
     // set all lastSyncs to 0
