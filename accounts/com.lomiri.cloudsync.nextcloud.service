@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="ubsync_UBsync_nextcloud">
-  <type>ubsync_UBsync</type>
+<service id="com.lomiri.cloudsync.nextcloud">
+  <type>com.lomiri.cloudsync</type>
   <provider>nextcloud</provider>
   <name>Nextcloud</name>
-  <profile>ubsync_UBsync</profile>
+  <profile>com.lomiri.cloudsync.nextcloud</profile>
   <translations>lomiri-cloudsync-app</translations>
 </service>

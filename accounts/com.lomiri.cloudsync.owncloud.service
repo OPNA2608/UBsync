@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="ubsync_UBsync_owncloud">
-  <type>ubsync_UBsync</type>
+<service id="com.lomiri.cloudsync.owncloud">
+  <type>com.lomiri.cloudsync</type>
   <provider>owncloud</provider>
   <name>Owncloud</name>
-  <profile>ubsync_UBsync</profile>
+  <profile>com.lomiri.cloudsync</profile>
   <translations>lomiri-cloudsync-app</translations>
 </service>

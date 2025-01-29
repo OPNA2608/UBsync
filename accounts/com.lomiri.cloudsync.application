@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application id="ubsync_UBsync">
+<application id="com.lomiri.cloudsync">
   <description>Cloud Synchronization</description>
   <desktop-entry>UBsync.desktop</desktop-entry>
   <translations>lomiri-cloudsync-app</translations>
-  <profile>ubsync_UBsync</profile>
+  <profile>com.lomiri.cloudsync</profile>
   <services>
-    <service id="ubsync_UBsync_nextcloud">
+    <service id="com.lomiri.cloudsync.nextcloud">
       <description>NextCloud Synchronization</description>
     </service>
-    <service id="ubsync_UBsync_owncloud">
+    <service id="com.lomiri.cloudsync.owncloud">
       <description>OwnCloud Synchronization</description>
     </service>
   </services>
