@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR UBports Developers
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 13:11+0000\n"
+"POT-Creation-Date: 2025-01-29 21:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,278 +18,262 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:71
+#: ../Cloudsync-ui/components/FileBrowser.qml:71
 msgid "No folders, press"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:85
+#: ../Cloudsync-ui/components/FileBrowser.qml:85
 msgid "on the panel to select this folder, or press"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:100
+#: ../Cloudsync-ui/components/FileBrowser.qml:100
 msgid "to create a new folder."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:154
+#: ../Cloudsync-ui/components/FileBrowser.qml:154
 msgid "Error occured!"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:170
+#: ../Cloudsync-ui/components/FileBrowser.qml:170
 msgid "Go Back"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:185
+#: ../Cloudsync-ui/components/FileBrowser.qml:185
 msgid "Create New Folder"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:189
+#: ../Cloudsync-ui/components/FileBrowser.qml:189
 msgid "New Folder"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:197
+#: ../Cloudsync-ui/components/FileBrowser.qml:197
 msgid "OK"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/components/FileBrowser.qml:207
+#: ../Cloudsync-ui/components/FileBrowser.qml:207
 msgid "Cancel"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:11
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:288
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:175
+#: ../Cloudsync-ui/ui/AboutPage.qml:11 ../Cloudsync-ui/ui/MenuPage.qml:288
+#: ../Cloudsync-ui/ui/TargetsPage.qml:175
 msgid "About"
 msgstr ""
 
 #. TRANSLATORS: Owncloud Sync version number e.g Version 0.1
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:78
-#, qt-format
+#: ../Cloudsync-ui/ui/AboutPage.qml:78
 msgid "App Version %1"
 msgstr ""
 
 #. TRANSLATORS: Nextcloudcmd binary version number e.g Version 1.8.1
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:85
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:101
-#, qt-format
+#: ../Cloudsync-ui/ui/AboutPage.qml:85
 msgid "Client: %1"
 msgstr ""
 
-#. TRANSLATORS: %1 is the maintainers name, %2 is the link text to the UBsync contributors teams page
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:99
-#, qt-format
+#. TRANSLATORS: %1 is the maintainers name, %2 is the link text to the Lomiri Cloudsync App contributors teams page
+#: ../Cloudsync-ui/ui/AboutPage.qml:99
 msgid "Maintained by %1 and the"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:100
-msgid "UBsync team"
+#: ../Cloudsync-ui/ui/AboutPage.qml:100
+msgid "Lomiri Cloudsync App team"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:112
+#: ../Cloudsync-ui/ui/AboutPage.qml:112
 msgid "Please report bugs to the"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:113
+#: ../Cloudsync-ui/ui/AboutPage.qml:113
 msgid "issue tracker"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:129
+#: ../Cloudsync-ui/ui/AboutPage.qml:129
 msgid "Thanks to"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:136
+#: ../Cloudsync-ui/ui/AboutPage.qml:136
 msgid "Owncloud client:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:144
+#: ../Cloudsync-ui/ui/AboutPage.qml:144
 msgid "Nextcloud client:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:152
+#: ../Cloudsync-ui/ui/AboutPage.qml:152
 msgid "This Qt library for WebDAV:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:160
+#: ../Cloudsync-ui/ui/AboutPage.qml:160
 msgid "Joan CiberSheep for the logo from:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:168
+#: ../Cloudsync-ui/ui/AboutPage.qml:168
 msgid "Lukas to enable the application with:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:178
+#: ../Cloudsync-ui/ui/AboutPage.qml:178
 msgid "Released under the terms of the GNU GPL v3"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:184
+#: ../Cloudsync-ui/ui/AboutPage.qml:184
 msgid "Fork of:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AboutPage.qml:192
+#: ../Cloudsync-ui/ui/AboutPage.qml:192
 msgid "Source code available on:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AccountsPage.qml:129
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:140
+#: ../Cloudsync-ui/ui/AccountsPage.qml:129 ../Cloudsync-ui/ui/MenuPage.qml:140
 msgid "Online Accounts"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AccountsPage.qml:253
+#: ../Cloudsync-ui/ui/AccountsPage.qml:253
 msgid "No accounts, press"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AccountsPage.qml:268
+#: ../Cloudsync-ui/ui/AccountsPage.qml:268
 msgid "on the panel to add a new account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/AccountsPage.qml:283
+#: ../Cloudsync-ui/ui/AccountsPage.qml:283
 msgid "Release to update the list of accounts ..."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:79
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:148
+#. account NOT Configured!
+#: ../Cloudsync-ui/ui/EditAccount.qml:79 ../Cloudsync-ui/ui/HelpPage.qml:148
 msgid "Not Configured Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:79
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:84
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:148
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:184
+#: ../Cloudsync-ui/ui/EditAccount.qml:79 ../Cloudsync-ui/ui/EditAccount.qml:84
+#: ../Cloudsync-ui/ui/HelpPage.qml:148 ../Cloudsync-ui/ui/HelpPage.qml:184
 msgid "related targets will NOT sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:84
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:184
+#. test if account is enabled in online accounts
+#. color for disabled accounts
+#: ../Cloudsync-ui/ui/EditAccount.qml:84 ../Cloudsync-ui/ui/HelpPage.qml:184
 msgid "Disabled Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:90
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:111
+#: ../Cloudsync-ui/ui/EditAccount.qml:90 ../Cloudsync-ui/ui/HelpPage.qml:111
 msgid "Enabled Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:90
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:111
+#: ../Cloudsync-ui/ui/EditAccount.qml:90 ../Cloudsync-ui/ui/HelpPage.qml:111
 msgid "related targets will sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:178
+#: ../Cloudsync-ui/ui/EditAccount.qml:178
 msgid "Account Settings"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:185
+#: ../Cloudsync-ui/ui/EditAccount.qml:185
 msgid "New Target"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:388
+#: ../Cloudsync-ui/ui/EditAccount.qml:388
 msgid "Sync on Mobile Data"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:420
+#: ../Cloudsync-ui/ui/EditAccount.qml:420
 msgid "Sync hidden files"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:452
+#: ../Cloudsync-ui/ui/EditAccount.qml:452
 msgid "Sync Frequency"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:473
+#: ../Cloudsync-ui/ui/EditAccount.qml:473
 msgid "No Sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:473
+#: ../Cloudsync-ui/ui/EditAccount.qml:473
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditAccount.qml:540
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:598
+#: ../Cloudsync-ui/ui/EditAccount.qml:540 ../Cloudsync-ui/ui/EditTarget.qml:603
 msgid ""
-"Synchronization service not running! Please, go to UBsync Settings and start "
-"the sync service, otherwise the target synchronization will not begin."
+"Synchronization service not running! Please, go to Lomiri Cloudsync App "
+"Settings and start the sync service, otherwise the target synchronization "
+"will not begin."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:40
+#: ../Cloudsync-ui/ui/EditTarget.qml:40
 msgid "Account Disabled"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:40
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:46
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:51
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:284
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:321
+#: ../Cloudsync-ui/ui/EditTarget.qml:40 ../Cloudsync-ui/ui/EditTarget.qml:46
+#: ../Cloudsync-ui/ui/EditTarget.qml:51 ../Cloudsync-ui/ui/HelpPage.qml:284
+#: ../Cloudsync-ui/ui/HelpPage.qml:321
 msgid "target will NOT sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:43
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:46
+#: ../Cloudsync-ui/ui/EditTarget.qml:43 ../Cloudsync-ui/ui/EditTarget.qml:46
 msgid "Account Not Configured"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:51
+#: ../Cloudsync-ui/ui/EditTarget.qml:51
 msgid "Target Disabled"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:56
+#: ../Cloudsync-ui/ui/EditTarget.qml:56
 msgid "Target Enabled"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:56
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:248
+#: ../Cloudsync-ui/ui/EditTarget.qml:56 ../Cloudsync-ui/ui/HelpPage.qml:248
 msgid "target will sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:254
+#: ../Cloudsync-ui/ui/EditTarget.qml:253
 msgid "Target Settings"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:418
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:47
+#: ../Cloudsync-ui/ui/EditTarget.qml:423 ../Cloudsync-ui/ui/TargetsPage.qml:47
 msgid "Unknown Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/EditTarget.qml:541
+#: ../Cloudsync-ui/ui/EditTarget.qml:546
 msgid "Enable/Disable this Target"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:8
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:238
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:181
+#: ../Cloudsync-ui/ui/HelpPage.qml:8 ../Cloudsync-ui/ui/MenuPage.qml:238
+#: ../Cloudsync-ui/ui/TargetsPage.qml:181
 msgid "Help"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:45
+#: ../Cloudsync-ui/ui/HelpPage.qml:45
 msgid "To set-up syncing for your folders:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:46
+#: ../Cloudsync-ui/ui/HelpPage.qml:46
 msgid ""
 "1) go to Lomiri Cloudsync App \"Online Accounts\", add new account by "
 "clicking \"plus\" icon in the main menu"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:47
+#: ../Cloudsync-ui/ui/HelpPage.qml:47
 msgid ""
 "2) set-up new \"target\" by clicking the \"new target\" icon in the account "
 "detail page main menu, or in the accounts list accounts' trailer menu"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:48
+#: ../Cloudsync-ui/ui/HelpPage.qml:48
 msgid "3) start the syncing service from the \"Lomiri Cloudsync App Settings\""
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:59
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:193
+#: ../Cloudsync-ui/ui/HelpPage.qml:59 ../Cloudsync-ui/ui/TargetsPage.qml:193
 msgid "Accounts"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:69
+#: ../Cloudsync-ui/ui/HelpPage.qml:69
 msgid ""
 "The term \"account\" represents in the Lomiri Cloudsync App context the "
 "system online account, as configured in system settings plus the custom "
 "Lomiri Cloudsync App configuration maintained by Lomiri Cloudsync App."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:70
+#: ../Cloudsync-ui/ui/HelpPage.qml:70
 msgid ""
 "The account might be enabled or disabled independently on Lomiri Cloudsync "
 "App. If an account cannot be used by Lomiri Cloudsync App anymore, its "
@@ -297,7 +281,7 @@ msgid ""
 "will not synchronize."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:71
+#: ../Cloudsync-ui/ui/HelpPage.qml:71
 msgid ""
 "If you remove the account configuration from Lomiri Cloudsync App, the "
 "related targets will NOT synchronize until you re-create the account "
@@ -306,189 +290,185 @@ msgid ""
 "temporarily without affecting Lomiri Cloudsync App configuration."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:73
+#: ../Cloudsync-ui/ui/HelpPage.qml:73
 msgid ""
 "Lomiri Cloudsync App uses following account symbols to express account "
 "states:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:199
+#: ../Cloudsync-ui/ui/HelpPage.qml:199
 msgid "Targets"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:210
+#: ../Cloudsync-ui/ui/HelpPage.qml:210
 msgid ""
 "The term \"target\" represents in the Lomiri Cloudsync App context the "
 "remote/local directory pair intended for synchronization plus  the set of "
 "custom \"target\" configuration."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:211
+#: ../Cloudsync-ui/ui/HelpPage.qml:211
 msgid ""
 "Lomiri Cloudsync App uses following target symbols to express target states:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:248
+#: ../Cloudsync-ui/ui/HelpPage.qml:248
 msgid "Active Target"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:284
+#: ../Cloudsync-ui/ui/HelpPage.qml:284
 msgid "Inactive Target"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/HelpPage.qml:321
+#: ../Cloudsync-ui/ui/HelpPage.qml:321
 msgid "Target With Disabled/Not Configured Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:17
+#: ../Cloudsync-ui/ui/MenuPage.qml:17
 msgid "Lomiri Cloudsync App"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:91
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:169
+#: ../Cloudsync-ui/ui/MenuPage.qml:91 ../Cloudsync-ui/ui/TargetsPage.qml:169
 msgid "Sync Targets"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/MenuPage.qml:189
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:10
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:187
+#: ../Cloudsync-ui/ui/MenuPage.qml:189
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:10
+#: ../Cloudsync-ui/ui/TargetsPage.qml:187
 msgid "Settings"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/RequestAccountPage.qml:13
+#: ../Cloudsync-ui/ui/RequestAccountPage.qml:13
 msgid "Add Online Account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/RequestAccountPage.qml:22
+#: ../Cloudsync-ui/ui/RequestAccountPage.qml:22
 msgid "Add Nextcloud account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/RequestAccountPage.qml:35
+#: ../Cloudsync-ui/ui/RequestAccountPage.qml:35
 msgid "Add OwnCloud account"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:53
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:53
 msgid "Status: %1"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:53
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:53
 msgid "Syncing"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:53
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:53
 msgid "Idle"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:53
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:53
 msgid "Stopped"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:58
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:58
 msgid "Stop"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:58
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:58
 msgid "Start"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:64
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:64
 msgid "Stop Service"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:64
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:64
 msgid "Start Service"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:74
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:74
 msgid "Sync Required"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:75
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:75
 msgid "Last Sync:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:80
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:80
 msgid "Sync"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:88
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:88
 msgid "Sync Starting"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:112
-#, qt-format
-msgid "Service: %1"
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:101
+msgid "Client : %1"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:119
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:112
+msgid "Service : %1"
+msgstr ""
+
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:119
 msgid "Service autostart:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:120
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:120
 msgid "Enable/Disable service autostart:"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:148
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:148
 msgid "Never"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:152
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:152
 msgid "%1 Months Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:156
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:156
 msgid "%1 Days Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:160
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:160
 msgid "%1  Hours Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:164
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:164
 msgid "%1 Minutes Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:167
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:167
 msgid "A Minute Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:171
-#, qt-format
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:171
 msgid "%1 Seconds Ago"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/SyncServicePage.qml:174
+#: ../Cloudsync-ui/ui/SyncServicePage.qml:174
 msgid "Just Now"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:214
+#: ../Cloudsync-ui/ui/TargetsPage.qml:214
 msgid "No synchronization targets configured, press"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:229
+#: ../Cloudsync-ui/ui/TargetsPage.qml:229
 msgid ""
 "in the main panel to enter Account Settings. In Account Settings, create a "
 "new synchronization target from an existing or new account. For explanation, "
 "see the help page."
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/TargetsPage.qml:245
+#: ../Cloudsync-ui/ui/TargetsPage.qml:245
 msgid "Release to update the list of targets …"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/WebdavFileBrowser.qml:34
+#: ../Cloudsync-ui/ui/WebdavFileBrowser.qml:34
 msgid "Loading"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/UBsync-ui/ui/WebdavFileBrowser.qml:46
+#: ../Cloudsync-ui/ui/WebdavFileBrowser.qml:46
 msgid "Check your connection or try again!"
 msgstr ""
 
-#: /home/puna/Development/freie-software-gmbh/UBsync/build/x86_64-linux-gnu/app/UBsync-ui/UBsync.desktop.in.h:1
-msgid "Cloudsync"
+#: ../OwncloudSyncd/owncloudsyncd.cpp:84
+msgid "unspecified"
 msgstr ""
