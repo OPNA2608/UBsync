@@ -7,3 +7,8 @@ dependencies_target:
 
 build_args:
 - "-DCLICK_MODE:BOOL=ON"
+
+libraries:
+  update-po-files:
+    builder: custom
+    build: cd ${ROOT} && po/update-translations.sh
