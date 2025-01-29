@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Cloudsync
-Exec=qmlscene %U UBsync-ui/Main.qml
-Icon=UBsync-ui/UBsync.png
+Exec=qmlscene %U Cloudsync-ui/Main.qml
+Icon=@DESKTOP_ICON@
 Terminal=false
 Type=Application
 X-Lomiri-Touch=true

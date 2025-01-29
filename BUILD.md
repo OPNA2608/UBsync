@@ -4,7 +4,7 @@
 ## Package Build
 
 ```bash
-$ PKG_PATH=PATH_TO_UBSYNC
+$ PKG_PATH=PATH_TO_LOMIRI_CLOUDSYNC_APP
 $ 
 $ cd ${PKG_PATH}
 $ clickable clean --arch arm64
@@ -17,8 +17,8 @@ $ clickable clean --arch amd64
 $ clickable build --arch amd64
 $
 $ # work with the packages ...
-$ touch ${PKG_PATH}/build/aarch64-linux-gnu/app/ubsync_0.5_arm64.click
-$ touch ${PKG_PATH}/build/build/arm-linux-gnueabihf/app/ubsync_0.5_armhf.click
+$ touch ${PKG_PATH}/build/aarch64-linux-gnu/app/lomiri-cloudsync-app_0.5_arm64.click
+$ touch ${PKG_PATH}/build/build/arm-linux-gnueabihf/app/lomiri-cloudsync-app_0.5_armhf.click
 $
 ```
 
@@ -32,7 +32,7 @@ The owncloudcmd binary and libraries for 20.04 (focal) were extracted from ubunt
 To build binaries from source, the command sequence similar to that presented below could be used:
 
 ```bash
-$ PKG_PATH=PATH_TO_UBSYNC
+$ PKG_PATH=PATH_TO_LOMIRI_CLOUDSYNC_APP
 $ # ARCH_TRIPLET="arm-linux-gnueabihf"
 $ ARCH_TRIPLET="aarch64-linux-gnu"
 $

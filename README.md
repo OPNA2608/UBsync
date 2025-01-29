@@ -1,48 +1,48 @@
-# UBsync
+# Lomiri Cloudsync App
 
-UBsync is the featured application for [OwnCloud](https://owncloud.com/)/[Nextcloud](https://nextcloud.com/) synchronization on [Ubuntu Touch](https://ubports.com/).
+Lomiri Cloudsync App is the application for [OwnCloud](https://owncloud.com/)/[Nextcloud](https://nextcloud.com/) synchronization on [Ubuntu Touch](https://ubports.com/).
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/ubsync)
 
 <img src="https://framagit.org/ernesst/UBsync/raw/master/Owncloud-Sync/UBsync.png" width="196"> [![Weblate Translation Status](https://hosted.weblate.org/widgets/ubports/-/ubsync/multi-auto.svg)](https://hosted.weblate.org/engage/ubports/)
 
-## Common UBsync Recommendations
+## Common Recommendations
 * Do not synchronize the entire home folder, because it can be quite big and certain fast-evolving files (caches, or profiles) may induce many file versions in the cloud. Rather set up several targets and select individual folders.
-* UBsync can be used to back up your app configs to Owncloud/Nextcloud
+* Cloudsync can be used to back up your app configs to Owncloud/Nextcloud
 * Application sync support tips:
-  * UBsync can be used to sync [Activity Tracker](https://open-store.io/app/activitytracker.cwayne18) app and Nextcloud GPXedit
-  * UBsync can be used to sync [Crazy Mark](https://open-store.io/app/crazy-mark.timsueberkrueb) app with Nextcloud Notes
-  * UBsync can be used to sync your music files
+  * Lomiri Cloudsync App can be used to sync [Activity Tracker](https://open-store.io/app/activitytracker.cwayne18) app and Nextcloud GPXedit
+  * Lomiri Cloudsync App can be used to sync [Crazy Mark](https://open-store.io/app/crazy-mark.timsueberkrueb) app with Nextcloud Notes
+  * Lomiri Cloudsync App can be used to sync your music files
   * ...
 
 ## Upgrade/Post-Install Recommendations
 * Reboot your phone after installation - backend daemon  is started by upstart and will be properly initialized when you log out and log in, the simpler way is probably to reboot your phone
 
 ## App Permissions
-UBsync requests explicitly following permissions:
+Lomiri Cloudsync App requests explicitly following permissions:
 1. Online Accounts - to be able to use Owncloud/Nextcloud accounts already set up in system settings
 1. Networking - as a cloud synchronization app, it naturally needs network access
 
-Additionally, UBsync is an *unconfined* app, which means, that it is not limited by any AppArmor security policies.
-This application needs to be *unconfined*, as the pre-defined AppArmor policies do not permit all of UBsyncs' vital features:
+Additionally, Lomiri Cloudsync App is an *unconfined* app, which means, that it is not limited by any AppArmor security policies.
+This application needs to be *unconfined*, as the pre-defined AppArmor policies do not permit all of Lomiri Cloudsync App's vital features:
 1. gain read/write access to any folder you wish to synchronize
-1. create the backend daemon (*Owncloudsyncd*) by upstart for background synchronisation
-1. *UBsync-ui* to *Owncloudsyncd* communication through *DBUS*
+1. create the backend daemon (*lomiri-cloudsync-owncloudd*) by upstart for background synchronisation
+1. *Cloudsync-ui* to *lomiri-cloudsync-owncloudd* communication through *DBUS*
 
 As unconfined apps may introduce security risks, you can review the app's source code or even build the app by yourself to be sure, that the app is not harmful.
 
 Please note, that *unconfined* applications in [OpenStore](https://open-store.io/) are manually [reviewed](https://open-store.io/about).
 
-To get the source code, go to [GitHub](https://github.com/belohoub/UBsync) to download and review the UBsync source code.
+To get the source code, go to [GitHub](https://github.com/belohoub/UBsync) to download and review the Lomiri Cloudsync App source code.
 
-To build the app, install [Clickable](https://clickable-ut.dev/en/latest/) (v7.0.0 or above), open a terminal, clone the UBsync repo, change into the UBsync folder and run `clickable`.
+To build the app, install [Clickable](https://clickable-ut.dev/en/latest/) (v7.0.0 or above), open a terminal, clone the Lomiri Cloudsync App repo, change into the Lomiri Cloudsync App folder and run `clickable`.
 
 ## Project History
-UBsync was originally forked from [ownCloud-sync](https://launchpad.net/owncloud-sync), a dedicated Nextcloud application for **Ubuntu touch**,  supported by [UBports](https://www.ubports.com).
+Lomiri Cloudsync App was originally forked from [ownCloud-sync](https://launchpad.net/owncloud-sync), a dedicated Nextcloud application for **Ubuntu touch**,  supported by [UBports](https://www.ubports.com).
 
 This repository continues, where [UBsync Launchpad Project](https://code.launchpad.net/~ocs-team/owncloud-sync/UBsync) finished.
 
-This fork was originally created as a reaction to the discussion at [forums.ubports.com](https://forums.ubports.com/topic/5116/help-creating-an-ubsync-arm64-version/30) related to missing arm64 support for UBsync.
+This fork was originally created as a reaction to the discussion at [forums.ubports.com](https://forums.ubports.com/topic/5116/help-creating-an-ubsync-arm64-version/30) related to missing arm64 support for Lomiri Cloudsync App.
 
 Later the development was returned to Launchpad for a short period. After discussions in the developers/testers community (12/2021 - since version 0.7),
 the development was moved to GitHub, as GitHub remains one of two major platforms,

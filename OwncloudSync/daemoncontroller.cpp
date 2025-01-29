@@ -6,9 +6,11 @@
 #include <QDebug>
 #include <QDBusPendingReply>
 
-#define OWNCLOUDSYNCD_SERVICE QStringLiteral("org.owncloudsyncd")
-#define OWNCLOUDSYNCD_CONTROLLER_PATH QStringLiteral("/org/owncloudsyncd/Controller")
-#define OWNCLOUDSYNCD_CONTROLLER_INTERFACE QStringLiteral("org.owncloudsyncd.Controller")
+// To properly keep these in sync, should be included from a shared header
+#define OWNCLOUDSYNCD_SERVICE "com.lomiri.cloudsync.owncloudd"
+#define OWNCLOUDSYNCD_CONTROLLER_PATH "/com/lomiri/cloudsync/owncloudd/Controller"
+#define OWNCLOUDSYNCD_CONTROLLER_INTERFACE "com.lomiri.cloudsync.owncloudd.Controller"
+
 
 DaemonController::DaemonController(QObject *parent) : QObject(parent)
 {
@@ -20,7 +22,7 @@ DaemonController::DaemonController(QObject *parent) : QObject(parent)
     }
 
     //Example connection to dbus daemon
-    QDBusConnection::sessionBus().connect("org.owncloudsyncd", "/org/owncloudsyncd/Controller", "org.owncloudsyncd.Controller", "status", this, SLOT(signalRecieved(QString)));
+    QDBusConnection::sessionBus().connect(OWNCLOUDSYNCD_SERVICE, OWNCLOUDSYNCD_CONTROLLER_PATH, OWNCLOUDSYNCD_CONTROLLER_INTERFACE, "status", this, SLOT(signalRecieved(QString)));
 
     //get the daemon status
     m_syncActive = false;

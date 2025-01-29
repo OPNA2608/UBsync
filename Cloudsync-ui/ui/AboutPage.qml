@@ -47,7 +47,7 @@ Page {
                 height: width
                 anchors.horizontalCenter: parent.horizontalCenter
                 source: Image {
-                   source: "../UBsync.svg"
+                   source: "../lomiri-cloudsync-app.svg"
                 }
 
                 MouseArea{
@@ -95,9 +95,9 @@ Page {
                     anchors{
                         horizontalCenter: clientLabel.horizontalCenter
                     }
-                    // TRANSLATORS: %1 is the maintainers name, %2 is the link text to the UBsync contributors teams page
+                    // TRANSLATORS: %1 is the maintainers name, %2 is the link text to the Lomiri Cloudsync App contributors teams page
                     labeltext: i18n.tr("Maintained by %1 and the").arg("Jan")
-                    linktext: i18n.tr("UBsync team")
+                    linktext: i18n.tr("Lomiri Cloudsync App team")
                     linkurl: "https://github.com/belohoub/UBsync#current-and-past-contributors"
                 }
                 Label {

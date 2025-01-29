@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application id="com.lomiri.cloudsync">
   <description>Cloud Synchronization</description>
-  <desktop-entry>UBsync.desktop</desktop-entry>
+  <desktop-entry>lomiri-cloudsync-app.desktop</desktop-entry>
   <translations>lomiri-cloudsync-app</translations>
   <profile>com.lomiri.cloudsync</profile>
   <services>

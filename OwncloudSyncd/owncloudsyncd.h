@@ -21,9 +21,9 @@
 #include <SignOn/Identity>
 
 
-#define OWNCLOUDSYNCD_SERVICE "org.owncloudsyncd"
-#define OWNCLOUDSYNCD_CONTROLLER_PATH "/org/owncloudsyncd/Controller"
-#define OWNCLOUDSYNCD_CONTROLLER_INTERFACE "org.owncloudsyncd.Controller"
+#define OWNCLOUDSYNCD_SERVICE "com.lomiri.cloudsync.owncloudd"
+#define OWNCLOUDSYNCD_CONTROLLER_PATH "/com/lomiri/cloudsync/owncloudd/Controller"
+#define OWNCLOUDSYNCD_CONTROLLER_INTERFACE "com.lomiri.cloudsync.owncloudd.Controller"
 #define OWNCLOUDSYNCD_VERSION QStringLiteral("0.8.1")
 
 class OwncloudSyncd : public QObject

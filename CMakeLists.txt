@@ -74,7 +74,7 @@ else()
     add_subdirectory (accounts)
 endif()
 
-add_subdirectory (UBsync-ui)
+add_subdirectory (Cloudsync-ui)
 add_subdirectory (OwncloudSync)
 add_subdirectory (OwncloudSyncd)
 

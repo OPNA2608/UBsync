@@ -132,7 +132,7 @@ Page {
 
     AccountModel {
         id: accounts
-        applicationId: "ubsync_UBsync"
+        applicationId: "com.lomiri.cloudsync"
     }
 
     Timer {

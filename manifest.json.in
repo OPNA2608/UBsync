@@ -4,10 +4,10 @@
     "architecture": "@CLICK_ARCH@",
     "title": "Cloudsync",
     "hooks": {
-        "UBsync": {
-            "accounts": "UBsync-ui/UBsync.accounts",
-            "apparmor": "UBsync-ui/UBsync.apparmor",
-            "desktop": "UBsync-ui/UBsync.desktop"
+        "Cloudsync": {
+            "accounts": "Cloudsync-ui/lomiri-cloudsync-app.accounts",
+            "apparmor": "Cloudsync-ui/lomiri-cloudsync-app.apparmor",
+            "desktop": "Cloudsync-ui/lomiri-cloudsync-app.desktop"
         }
     },
     "version": "0.8.1",
